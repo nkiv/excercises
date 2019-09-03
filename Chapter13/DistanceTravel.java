@@ -10,9 +10,11 @@ public class DistanceTravel{
         System.out.println("Enter the number of seconds:");
         t = scan.nextDouble();
 
-        double d = (1/2)*g(t*t);
+        double d = (0.5)*g*(t*t);
 
         System.out.println("Distance: " + d);
+        System.out.println("Time " + t);
+        System.out.println("g " + g);
 
     }
 }
