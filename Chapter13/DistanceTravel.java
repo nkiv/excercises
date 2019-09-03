@@ -13,8 +13,5 @@ public class DistanceTravel{
         double d = (0.5)*g*(t*t);
 
         System.out.println("Distance: " + d);
-        System.out.println("Time " + t);
-        System.out.println("g " + g);
-
     }
 }
