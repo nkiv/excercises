@@ -18,9 +18,18 @@ public class OrderChecker{
         System.out.println("Number of washers:");
         washer = scan.nextInt();
 
-        System.out.println("Number of bolts: " + bolt + " Number of nuts: " + nut + " Number of washers: " + washer);
+        System.out.println("Number of bolts: " + bolt);
+        System.out.println("Number of nuts: " + nut);
+        System.out.println("Number of washers: " + washer);
 
-        orderCost = (boltCost*bolt)(nutCost*nut)(washerCost*washer);
+        if (washer*2>=bolt){
+            System.out.println("Check the order: too few washers");
+        } else if(nut>=bolt){
+                System.out.println("Check the order: too few nuts");
+            }else{
+        System.out.println("Order looks spick and span!");
+                }
+        orderCost = (boltCost*bolt)+(nutCost*nut)+(washerCost*washer);
 
         System.out.println("Order Cost:" + orderCost);
     }
