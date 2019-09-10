@@ -22,9 +22,9 @@ public class OrderChecker{
         System.out.println("Number of nuts: " + nut);
         System.out.println("Number of washers: " + washer);
 
-        if (washer*2>=bolt){
+        if (!washer*2>=bolt){
             System.out.println("Check the order: too few washers");
-        } else if(nut>=bolt){
+        } else if(!nut>=bolt){
                 System.out.println("Check the order: too few nuts");
             }else{
         System.out.println("Order looks spick and span!");
